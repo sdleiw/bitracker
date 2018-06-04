@@ -18,6 +18,13 @@ class Exchange
      */
     public function addAccounts(BalanceInterface $balance): void
     {
-        $this->exchanges[$balance->getName()] = $balance;
+        $sortedBalance = clone($balance);
+        $balances = $balance->getBalance();
+        uasort($balances, function ($a, $b) {
+            return $b->usd <=> $a->usd;
+        });
+        $sortedBalance->setBalance($balances);
+
+        $this->exchanges[$balance->getName()] = $sortedBalance;
     }
 }
