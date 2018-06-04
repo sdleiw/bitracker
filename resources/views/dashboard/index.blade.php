@@ -1,7 +1,7 @@
 @extends('bitracker::layouts.app')
 
 @section('meta-title')
-    <title>{{ '$' . number_format($portfolio->sum, 2) }}</title>
+    {{ '$' . number_format($portfolio->sum, 2) }}
 @endsection
 
 @section('css')

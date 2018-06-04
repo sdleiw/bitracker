@@ -46,4 +46,3 @@ if needed a price mapper to adjust coin labels
 - price mapper should implement `MapperInterface`
 - add the config will be published and could be found in `config/bitracker.php` 
 and api credentials should be added in `.env`
-    
