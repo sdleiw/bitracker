@@ -10,7 +10,7 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-sm-12 col-md-6">
                 @include('bitracker::dashboard.include.portfolio')
             </div>
