@@ -1,11 +1,14 @@
-@extends('layouts.app')
+@extends('bitracker::layouts.app')
 
 @section('meta-title')
     <title>{{ '$' . number_format($portfolio->sum, 2) }}</title>
 @endsection
 
-@section('content')
+@section('css')
     <link href="{{ asset('vendor/bitracker/webfont/cryptocoins.css') }}" rel="stylesheet">
+@endsection
+
+@section('content')
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6">
