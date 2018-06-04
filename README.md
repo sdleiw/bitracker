@@ -3,6 +3,8 @@ bitTracker
 
 for those who want to track their own coin portfolio
 
+the old [repo](https://github.com/sdleiw/bitracker-demo) serves as a demo and will not be updated anymore  
+
 how to use
 ---
 
@@ -31,10 +33,6 @@ add api credentials in the `.env` file, supported platforms are
 php artisan serve
 goto http://127.0.0.1:8000
 ```
-
-### cache
-
-results from all calls will be cached for 5 minutes
 
 extend for more exchanges
 ---
