@@ -1,0 +1,28 @@
+{
+    "name": "sdleiw/bitracker",
+    "description": "crypto portfolio tracker for developers",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lei",
+            "email": "leiwgz@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lei\\Bitracker\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^6.3",
+        "laravel/framework": "^5.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lei\\Bitracker\\BitrackerServiceProvider"
+            ]
+        }
+    }
+}
